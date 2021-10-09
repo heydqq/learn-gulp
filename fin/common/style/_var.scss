@@ -1,0 +1,17 @@
+// font-size
+$font-size-xs: 12px;
+$font-size-sm: 14px;
+$font-size-md: 16px;
+$font-size-lg: 18px;
+$font-size-xl: 20px;
+
+//color
+$color-theme:var(--color-theme,#5146FE);
+$color-positive:var(--color-positive,#36B66F);
+$color-warn:var(--color-warn,#F76260);
+
+//text-color
+$color-dark-content:var(--color-dark-content,#333);
+$color-content:var(--color-content,#666);
+$color-light-content:var(--color-light-content,#999);
+$color-placeholder:var(--color-placeholder,#ccc);

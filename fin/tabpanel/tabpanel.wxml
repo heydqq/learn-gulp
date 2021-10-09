@@ -1,0 +1,3 @@
+<view class="won-tabpanel" style="{{ show ? '' : 'display: none;' }}">
+    <slot ></slot>
+</view>

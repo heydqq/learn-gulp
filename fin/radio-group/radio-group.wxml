@@ -1,0 +1,3 @@
+<radio-group class="radio-group" capture-catch:radiochange="onRadioChange">
+    <slot />
+</radio-group>

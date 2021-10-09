@@ -1,0 +1,14 @@
+<view class="won-field {{error.length>0?'won-field-error':''}} {{layout==='vertical'?'won-field-vertical' : ''}}">
+    <view class="won-field-label" style="min-width: {{labelWidth}}">
+        <text class="won-field-required">{{required?'*':''}}</text>
+        {{label}}
+    </view>
+    <view class="won-field-body">
+        <view capture-bind:formitemchange='onChange'>
+            <slot></slot>
+        </view>
+        <view wx:for="{{error}}" wx:key="field" class="won-field-error-items">
+            {{item.message}}
+        </view>
+    </view>
+</view>

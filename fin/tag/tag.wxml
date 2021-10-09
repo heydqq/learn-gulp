@@ -1,0 +1,8 @@
+<view class="container won-we-class">
+  <view 
+    wx:for="{{tagList}}"
+    wx:key="index" class="tag-item {{!!item.empty ? '' : 'tag-item-solid'}}"
+    data-index="{{index}}"
+    style="{{ !!item.empty && !!item.color ? 'color: '+ item.color +';background-color: #fff;border: 1px solid '+item.color : !!item.empty ? 'color: #5146FE;background-color: #fff;border: 1px solid #5146FE' : !!item.color ? 'background-color:'+item.color : ''}}">{{item.name}}</view>
+  <!-- <slot></slot> -->
+</view>

@@ -1,0 +1,34 @@
+.won-field {
+  display: flex;
+  align-items: center;
+  padding: 30rpx 0;
+  border-bottom: 0.1rpx solid #efefef;
+  font-size: 28rpx;
+  &-vertical {
+    flex-direction: column;
+    align-items: flex-start;
+    & .won-field-label {
+      padding-bottom: 20rpx;
+    }
+  }
+  &-label {
+    position: relative;
+    margin-right: 15rpx;
+    min-width: 100rpx;
+    font-size: 30rpx;
+    font-weight: 400;
+  }
+  &-required {
+    position: absolute;
+    left: -15rpx;
+    top: 0;
+    color: red;
+  }
+  &-error {
+    border-color: red;
+    &-items {
+      font-size: 20rpx;
+      color: red;
+    }
+  }
+}

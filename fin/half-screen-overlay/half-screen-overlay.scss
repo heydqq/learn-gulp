@@ -1,0 +1,85 @@
+.won-overlay {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1000;
+    > .won-mask {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 1000;
+        background: rgba(51, 51, 51, 0.7);
+    }
+
+    > .won-content {
+        background: #ffffff;
+        border-radius: 8px 8px 0px 0px;
+        z-index: 5000;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        max-height: 80%;
+        padding:  0 40rpx 40rpx 40rpx;
+        > .won-title {
+            height: 112rpx;
+            position: relative;
+            > .won-t-text {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            > .won-t-left {
+                position: absolute;
+                left: 0;
+                width: 112rpx;
+                height: 100%;
+                line-height: 112rpx;
+                text-align: center;
+            }
+            > .won-t-right {
+                position: absolute;
+                right: 0;
+                width: 112rpx;
+                height: 100%;
+                line-height: 112rpx;
+                text-align: center;
+            }
+            > .won-t-left-font {
+                font-size: 28rpx;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                color: #999999;
+            }
+            > .won-t-right-font {
+                font-size: 28rpx;
+                font-family: PingFangSC-Medium, PingFang SC;
+                font-weight: 500;
+                color: #5146fe;
+            }
+        }
+        >.won-slot-content{
+            position: relative;
+            height: 100%;
+            overflow-y: auto;
+        }
+        
+    }
+}
+
+@supports (bottom: constant(safe-area-inset-bottom)) {
+    .won-iphoneX-adapter {
+        padding-bottom: constant(safe-area-inset-bottom) !important;
+    }
+}
+
+@supports (bottom: env(safe-area-inset-bottom)) {
+    .iphoneX-adapter {
+        padding-bottom: env(safe-area-inset-bottom) !important;
+    }
+}

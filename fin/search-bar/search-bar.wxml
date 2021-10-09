@@ -1,0 +1,19 @@
+<view class="container won-we-class">
+  <view class="search-bar" bindtap="onClickInput">
+    <view class="view-flex">
+      <view class="search-icon"></view>
+    </view>
+    <input
+      class="search-input"
+      type="text"
+      placeholder="{{placeholder}}"
+      value="{{inputValue}}"
+      focus="{{getFocus}}"
+      bindfocus="onInputFocus"
+      bindblur="onInputBlur"
+      bindinput="onInput">
+    </input>
+    <view class="search-eliminate" bindtap="onClickEliminateIcon" wx:if="{{eliminateIcon}}"><view class="search-eliminate-icon"></view></view>
+  </view>
+  <view class="search-button" bindtap="onClickSearch" wx:if="{{showButton}}">{{buttonText}}</view>
+</view>

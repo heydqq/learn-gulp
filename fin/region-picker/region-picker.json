@@ -1,0 +1,8 @@
+{
+    "component": true,
+    "navigationStyle":"custom",
+    "enablePullDownRefresh": false,
+    "usingComponents": {
+        "half-screen-overlay": "../half-screen-overlay/half-screen-overlay"
+    }
+}

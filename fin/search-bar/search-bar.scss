@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 37px;
+    background: #FFFFFF;
+    border-radius: 42px;
+    border: 2px solid #CCCCCC;
+
+    .view-flex {
+        display: flex;
+    }
+}
+
+.search-icon {
+    margin-left: 15px;
+    margin-right: 5px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("https://j1.58cdn.com.cn/jinrong/loan/baoxian/customer-files/search-bar@2x.png");
+    background-size: cover;
+}
+
+.search-input {
+    width: 100%;
+}
+
+.search-eliminate {
+    padding: 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 35px;
+    .search-eliminate-icon {
+        width: 20px;
+        height: 20px;
+        background: url("https://j1.58cdn.com.cn/jinrong/loan/baoxian/customer-files/eliminate@2x.png");
+        background-size: cover;  
+    }
+}
+
+
+.search-button {
+    padding-left: 10px;
+    width: 40px;
+}

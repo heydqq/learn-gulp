@@ -1,0 +1,8 @@
+{
+    "component": true,
+    "navigationStyle":"custom",
+    "enablePullDownRefresh": false,
+    "usingComponents": {
+        "picker": "../picker/picker"
+    }
+}

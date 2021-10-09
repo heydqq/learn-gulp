@@ -1,0 +1,21 @@
+.won-subtabs {
+    display: flex;
+    justify-content: start;
+
+    &-wrap {
+        flex: 0 0 auto;
+
+        .won-subtab-title {
+            padding: 18rpx 42rpx;
+            margin: 16rpx 15rpx;
+            font-size: 24rpx;
+            height: 24rpx;
+            line-height: 24rpx;
+            font-family: PingFangSC-Semibold, PingFang SC;
+            font-weight: 500;
+            border-radius: 32rpx;
+            border: 1px solid #CCCCCC;
+            color: #666666;
+        }
+    }
+}

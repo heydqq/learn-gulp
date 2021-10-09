@@ -1,0 +1,36 @@
+<view class="won-we-pick">
+    <half-screen-overlay 
+        class="won-we-pick-overlay"
+        bind:confirmClick="onConfirm" 
+        show="{{show}}" 
+        maskClosable="{{maskClosable}}" 
+        title="{{title}}"
+        confirmColor="{{confirmColor}}"
+    >
+        <picker-view 
+            class="won-we-pick-view"
+            indicator-style="height: 54px;"
+            value="{{indexValue}}" 
+            data-index="{{ options }}" 
+            bindchange="bindChange"
+            bindpickstart="touchStart"
+        >
+            <picker-view-column 
+                class="picker-view-column"
+                wx:for="{{options}}" 
+                wx:key="index" 
+                data-index="{{ index }}" 
+                bindtouchend="getIndex"
+            >
+                <view 
+                    wx:for="{{options[index]}}" 
+                    wx:key="value" 
+                    wx:for-index="insideIndex" 
+                    class="{{indexValue[index] === insideIndex ? 'picker-view-selected' : 'picker-view-unselected'}}"
+                >
+                    {{item.label}}
+                </view>
+            </picker-view-column>
+        </picker-view>
+    </half-screen-overlay>
+</view>

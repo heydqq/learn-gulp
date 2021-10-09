@@ -1,0 +1,26 @@
+.won-tabs {
+    display: flex; 
+    flex-direction: row;
+
+    &-wrap {
+        flex: 1 0 auto;
+        text-align: center;
+    
+        .won-tab-title {
+            color: #333333;
+            font-size: 32rpx;
+            height: 32rpx;
+            line-height: 32rpx;
+            font-family: PingFangSC-Semibold, PingFang SC;
+            font-weight: 600;
+            padding: 30rpx;
+        }
+
+        .won-tab-line {
+            margin: auto;
+            height: 6rpx;
+            width: 38rpx;
+            background-color: #5146FE;
+        }
+    }
+}

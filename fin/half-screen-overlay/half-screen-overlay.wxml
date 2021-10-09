@@ -1,0 +1,18 @@
+<view class="won-overlay" wx:if="{{show}}">
+    <view bind:tap="clickMask" class="won-mask" wx:if="{{!hideMask}}"></view>
+    <view class="won-content" style="{{hideHeader?'padding-top:40rpx':''}}">
+        <view class="won-title" wx:if="{{!hideHeader}}">
+            <view class="won-t-left won-t-left-font" bind:tap="closeClick" wx:if="{{!hideCancel}}" style="{{cancelColor?'color:'+cancelColor:''}}">
+                {{cancelText}}
+            </view>
+            <view class="won-t-text won-t-text-font">{{title}}</view>
+            <view class="won-t-right won-t-right-font" bind:tap="confirmClick" wx:if="{{!hideConfirm}}" style="{{confirmColor?'color:'+confirmColor:''}}">
+                {{confirmText}}
+            </view>
+        </view>
+        <view class="won-slot-content">
+            <slot></slot>
+        </view>
+        <view class="won-iphoneX-adapter"></view>
+    </view>
+</view>

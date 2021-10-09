@@ -1,0 +1,16 @@
+<input
+  class="form-item"
+  value="{{ value }}"
+  type="{{ type }}"
+  password="{{ password }}"
+  placeholder="{{ placeholder }}"
+  placeholderClass="{{ placeholderClass }}"
+  placeholderStyle="{{ placeholderStyle }}"
+  disabled="{{ disabled }}"
+  maxLength="{{ maxLength }}"
+  autoFocus="{{ autoFocus }}"
+  focus="{{ focus }}"
+  confirmType="{{ confirmType }}"
+  bindinput="onInput"
+  bindfocus="onFocus"
+/>

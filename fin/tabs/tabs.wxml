@@ -1,0 +1,24 @@
+<view class="won-we-class">
+    <scroll-view 
+        scroll-x="{{ isScrollable }}"
+        scroll-left="{{ scrollLeft }}"
+        scroll-with-animation
+    >
+        <view class="won-tabs">
+            <view 
+                class="won-tabs-wrap"
+                wx:for="{{tabList}}"
+                wx:key="index" 
+                data-index="{{ index }}"  
+                bind:tap="onTap" 
+            >
+                <view class="won-tab-title">{{ item.title }}</view>
+                <view wx:if="{{ activeKey === item.key }}" class="won-tab-line" />
+            </view>
+        </view>
+     </scroll-view>
+
+    <view>
+        <slot />
+    </view>
+</view>

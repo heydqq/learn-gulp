@@ -1,0 +1,21 @@
+.radio-elem {
+  display: flex;
+  line-height: 35rpx;
+  margin-right: 30rpx;
+  &-diabled-true .radio-icon {
+    width: 30rpx;
+    height: 30rpx;
+    margin-right: 15rpx;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background-color: #efefef;
+  }
+  &-diabled-false .radio-icon {
+    width: 30rpx;
+    height: 30rpx;
+    margin-right: 15rpx;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background-color: #fff;
+  }
+}

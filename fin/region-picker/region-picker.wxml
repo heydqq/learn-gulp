@@ -1,0 +1,48 @@
+<view class="won-we-region">
+    <half-screen-overlay 
+        class="won-we-region-overlay"
+        catch:confirmClick="onConfirm" 
+        show="{{show}}" 
+        maskClosable="{{maskClosable}}" 
+        title="{{title}}"
+        confirmColor="{{confirmColor}}"
+    >
+        <picker-view 
+            class="won-we-region-pick"
+            indicator-style="height: 54px;" 
+            value="{{currentValue}}" 
+            bind:change="bindChange"
+            bindpickstart="touchStart"
+        >
+            
+            <picker-view-column 
+                class="won-we-region-pick-column"
+                data-index="0" 
+                bindtouchend="getIndex"
+            >
+                <view wx:for="{{dataOption}}" wx:key="index" style="line-height: 54px;">
+                    {{item.cityName}}
+                </view>
+            </picker-view-column>
+
+            <picker-view-column 
+                data-index="1" 
+                bindtouchend="getIndex"
+            >
+                <view wx:for="{{cityOption}}" wx:key="cityCode" style="line-height: 54px;">
+                    {{item.cityName}}
+                </view>
+            </picker-view-column>
+
+            <picker-view-column 
+                data-index="2" 
+                bindtouchend="getIndex"
+            >
+                <view wx:for="{{areaOption}}" wx:key="cityCode" style="line-height: 54px;">
+                    {{item.cityName}}
+                </view>
+            </picker-view-column>
+
+        </picker-view>
+    </half-screen-overlay>
+</view>

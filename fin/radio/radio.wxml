@@ -1,0 +1,7 @@
+<!-- components/radio/index.wxml -->
+<view class="radio-elem radio-elem-diabled-{{disabled}}" data-value="{{value}}" checked="{{isChecked}}" disabled="{{disabled}}" capture-catch:tap="onChange">
+    <view class="radio-icon" style="border: {{isChecked ? '10rpx solid ' + color : '1rpx solid #efefee'}}"></view>
+    <view class="radio-slot">
+        <slot />
+    </view>
+</view>

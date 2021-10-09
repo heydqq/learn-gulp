@@ -1,0 +1,26 @@
+<view class="won-we-class">
+    <scroll-view 
+        scroll-x="{{ isScrollable }}"
+        scroll-left="{{ scrollLeft }}"
+        scroll-with-animation
+    >
+        <view class="won-subtabs">
+            <view 
+                class="won-subtabs-wrap"
+                wx:for="{{tabList}}"
+                wx:key="index" 
+                data-index="{{ index }}"  
+                bind:tap="onTap" 
+            >
+                <view 
+                    class="won-subtab-title"
+                    style="color: {{ item.index === currentIndex ? (plain ? color : '#FFFFFF') : '' }}; border-color: {{ item.index === currentIndex ? color : '' }}; background-color: {{ item.index === currentIndex && !plain ? color : '' }}"
+                >{{ item.title }}</view>
+            </view>
+        </view>
+     </scroll-view>
+
+    <view >
+        <slot />
+    </view>
+</view>

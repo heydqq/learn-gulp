@@ -1,0 +1,13 @@
+<view class="won-we-actionsheet">
+    <half-screen-overlay
+        class="won-we-actionsheet-overlay"
+        show="{{show}}" 
+        hideHeader="{{hideHeader}}" 
+        maskClosable="{{maskClosable}}" 
+    >
+        <view class="won-we-actionsheet-detail">
+            <slot></slot>
+            <view class="exit" bindtap="exit">取消</view>
+        </view>
+    </half-screen-overlay>
+</view>

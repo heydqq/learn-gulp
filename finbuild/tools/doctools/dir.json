@@ -1,0 +1,82 @@
+{
+	"/card/": {
+		"type": "展示组件",
+		"path": "/card/",
+		"title": "Card 卡片"
+	},
+	"/tag/": {
+		"type": "展示组件",
+		"path": "/tag/",
+		"title": "Tag 标签"
+	},
+	"/common/": {
+		"type": "展示组件",
+		"path": "/common/",
+		"title": "定制样式"
+	},
+	"/form/": {
+		"type": "表单组件",
+		"path": "/form/",
+		"title": "Form 表单"
+	},
+	"/input/": {
+		"type": "表单组件",
+		"path": "/input/",
+		"title": "Input 输入框"
+	},
+	"/radio/": {
+		"type": "表单组件",
+		"path": "/radio/",
+		"title": "Radio 单选框"
+	},
+	"/search-bar/": {
+		"type": "表单组件",
+		"path": "/search-bar/",
+		"title": "Search 搜索框"
+	},
+	"/picker/": {
+		"type": "表单组件",
+		"path": "/picker/",
+		"title": "Picker 选择器"
+	},
+	"/datetime-picker/": {
+		"type": "表单组件",
+		"path": "/datetime-picker/",
+		"title": "DatetimePicker 日期时间选择器"
+	},
+	"/region-picker/": {
+		"type": "表单组件",
+		"path": "/region-picker/",
+		"title": "RegionPicker  省市区选择器"
+	},
+	"/button/": {
+		"type": "基础组件",
+		"path": "/button/",
+		"title": "Button 按钮"
+	},
+	"/screen-overlay/": {
+		"type": "基础组件",
+		"path": "/screen-overlay/",
+		"title": "ScreenOverlay 全屏遮罩浮层"
+	},
+	"/half-screen-overlay/": {
+		"type": "基础组件",
+		"path": "/half-screen-overlay/",
+		"title": "ScreenOverlay 半屏遮罩浮层"
+	},
+	"/actionsheet/": {
+		"type": "基础组件",
+		"path": "/actionsheet/",
+		"title": "Actionsheet 动作面板"
+	},
+	"/tabs/": {
+		"type": "导航组件",
+		"path": "/tabs/",
+		"title": "Tabs 标签页"
+	},
+	"/subtabs/": {
+		"type": "导航组件",
+		"path": "/subtabs/",
+		"title": "Subtabs 二级标签页"
+	}
+}

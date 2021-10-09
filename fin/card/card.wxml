@@ -1,0 +1,5 @@
+<view class="won-card {{customClass?'won-we-class':'won-'+borderType}}" style="{{customClass?'':'background:'+bgColor}}">
+  <view class="content">
+    <slot></slot>
+  </view>
+</view>

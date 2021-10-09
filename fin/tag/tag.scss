@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag-item {
+    background-color: #5146FE;
+    border-radius: 2px;
+    color: #fff;
+    padding: 2px 4px;
+    margin: 0 5px 5px 0;
+}
+
+.tag-item-solid {
+    padding: 3px 5px !important;
+}

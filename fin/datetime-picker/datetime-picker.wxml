@@ -1,0 +1,12 @@
+<view class="won-we-datetime">
+    <picker 
+        class="won-we-datetime-pick"
+        id="datetime-picker"
+        options="{{cols}}" 
+        value="{{inputValue}}" 
+        bind:valueChange="onValueChange"
+        bind:onConfirm="onConfirm"
+        show="{{show}}"
+        confirmBtnColor="{{confirmBtnColor}}"
+    />
+</view>
