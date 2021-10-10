@@ -1,0 +1,23 @@
+{
+	"usingComponents": {
+		"tag": "./tag/tag",
+		"search-bar": "./search-bar/search-bar",
+		"tabs": "./tabs/tabs",
+		"tabpanel": "./tabpanel/tabpanel",
+		"subtabs": "./subtabs/subtabs",
+		"card": "./card/card",
+		"half-screen-overlay": "./half-screen-overlay/half-screen-overlay",
+		"screen-overlay": "./screen-overlay/screen-overlay",
+		"actionsheet": "./actionsheet/actionsheet",
+		"region-picker": "./region-picker/region-picker",
+		"datetime-picker": "./datetime-picker/datetime-picker",
+		"picker": "./picker/picker",
+		"button": "./button/button",
+		"field": "./field/field",
+		"form": "./form/form",
+		"radio": "./radio/radio",
+		"radio-group": "./radio-group/radio-group",
+		"input": "./input/input",
+		"region-data": "./region-picker/region-data"
+	}
+}

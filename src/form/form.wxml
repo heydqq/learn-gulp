@@ -1,0 +1,4 @@
+<!-- components/form/index.wxml -->
+<view>
+    <slot></slot>
+</view>

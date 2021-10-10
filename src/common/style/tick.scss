@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'tick';
+    src: url('../fonts/tick.1621407387479.ttf') format('truetype');
+}
+
+.icon-tick {
+    font-family: 'tick';
+}
+.icon-tick:before {
+    content: "\e904";
+}
+  

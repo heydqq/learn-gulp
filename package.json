@@ -4,15 +4,24 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.15.8",
+    "del": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
     "gulp-rename": "^2.0.0",
-    "gulp-uglify": "^3.0.2"
+    "gulp-sass": "^5.0.0",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "gulp-uglify": "^3.0.2",
+    "require-dir": "^1.2.0",
+    "sass": "^1.42.1"
+  },
+  "dependencies": {
+    "typescript": "^4.4.3"
   }
 }

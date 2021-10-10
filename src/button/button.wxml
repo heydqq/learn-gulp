@@ -1,0 +1,33 @@
+<button 
+    class="won-btn won-btn-{{type}} won-btn-{{size}} won-btn-{{shape}} {{disabled ? 'won-btn-disabled' : '' }} won-we-class" 
+    loading="{{loading}}" 
+    disabled="{{disabled}}"
+    form-type="{{ formType }}"
+    hover-class="{{ hoverClass }}"
+    open-type="{{ openType }}"
+    hover-stop-propagation="{{ hoverStopPropagation }}"
+    hover-start-time="{{ hoverStartTime }}"
+    hover-stay-time="{{ hoverStayTime }}"
+    lang="{{ lang }}"
+    session-from="{{ sessionFrom }}"
+    send-message-title="{{ sendMessageTitle }}"
+    send-message-path="{{ sendMessagePath }}"
+    send-message-img="{{ sendMessageImg }}"
+    show-message-card="{{ showMessageCard }}"
+    bindgetuserinfo="bindgetuserinfo"
+    bindcontact="bindcontact"
+    bindgetphonenumber="bindgetphonenumber"
+    app-parameter="{{ appParameter }}"
+    binderror="binderror"
+    bindopensetting="bindopensetting"
+    bindlaunchapp="bindlaunchapp"
+    bindtap="{{ disabled || loading ? '' : 'bindtap' }}"
+>
+    <image 
+        wx:if="{{icon}}"
+        class="won-btn-icon" 
+        src="{{icon}}"
+
+    />
+    <slot />
+</button>
